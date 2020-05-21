@@ -14,8 +14,8 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get about" do
-    get books_about_url
+    get books_about_me_url
     assert_response :success
-    assert_select "title", "About | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "About me | Ruby on Rails Tutorial Sample App"
   end
 end

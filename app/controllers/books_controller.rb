@@ -5,6 +5,6 @@ class BooksController < ApplicationController
   def help
   end
 
-  def about
+  def about_me
   end
 end
