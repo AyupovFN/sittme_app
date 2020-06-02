@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  get 'users/new'
   root 'books#home'
-  get 'books/help'
-  get 'books/about_me'
-  get 'books/contact'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'help' => 'books#help'
+  get 'about_me' => 'books#about_me'
+  get 'contact' => 'books#contact'
+  get 'signup'  => 'users#new'
 end
